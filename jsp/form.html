@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head> 
+  <body>
+    <form method="POST" action="form.jsp">
+      <h1>회원가입</h1>
+      <div>이름 : <input type="text" name="name" required placeholder="이름을 입력하세요"/></div>
+      <div>
+        나이 : <input type="number" name="old" min="1" max="100"  />
+      </div>
+      <span>
+        성별 : <input type="radio" name="sex" value="male" checked disabled />남
+        <input type="radio" name="sex" value="female" disabled />여
+      </span>
+      <div>생년월일 : <input type="date" name="birth"/></div>
+      <span
+        >아이디 : <input type="text" name="id" required />
+        <button type="button" onclick="alert('아이디를 사용할 수 있습니다.')">
+          중복확인
+        </button></span
+      >
+      <div>비밀번호 : <input type="password" name="pass" required/></div>
+      <div>비밀번호 확인 : <input type="password" name="pass1" required/></div>
+      <div>이메일 : <input type="email" name="myemail" required /></div>
+      <div>이메일 확인 : <input type="email" name="myemail1" required /></div>
+      <div>
+        좋아하는 과목
+        <select name="subject" size="1">
+          <option value="1">과학</option>
+          <option value="2">사회</option>
+          <option value="3">영어</option>
+        </select>
+      </div>
+      <div>
+        취미<input type="checkbox" name="hob" value="game" />게임
+        <input type="checkbox" name="hob" value="tv" />TV
+        <input type="checkbox" name="hob" value="reading" />독서
+      </div>
+      <input type="checkbox" name="hob" value="study" />공부
+      <div>
+        블로그 :
+        <input type="url" name="blog" value="http://www.naver.com" readonly />
+      </div>
+      <div>좋아하는 색깔 : <input type="color" name="color" /></div>
+      <div>
+        전공분야 :
+        <select>
+          <optgroup label="computer">
+            <option>software</option>
+            <option>system</option>
+          </optgroup>
+          <optgroup label="language">
+            <option>english</option>
+            <option>korea</option>
+          </optgroup>
+        </select>
+      </div>
+      <span
+        ><input type="submit" value="회원가입" />
+        <input type="reset" value="다시작성"
+      /></span>
+      1<input type="range" name="point" min="1" max="100" />100
+      <br>
+      <meter
+        min="30"
+        max="100"
+        low="30"
+        high="50"
+        optimum="70"
+        value="100"
+      ></meter>
+    </form>
+  </body>
+</html>
