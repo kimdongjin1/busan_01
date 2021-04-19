@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    #box1 {
+   width: 100px; height: 100px;   
+      background: green;
+  }
+  #box1:hover{transform: scale(2);
+  background-color: greenyellow;
+  }
+
+  #box2 {
+    width: 100px; height: 100px;
+    background: gray;
+  }
+  #box2:hover{
+    transform: rotate(45deg);
+  }
+  #circle
+  {width: 200px; height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  background:linear-gradient(to right, red, green, yellow, blue);
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+  }
+  @keyframes circle{
+   0% {transform:rotate(0deg) ;}
+   25% {transform: rotate(90deg);}
+   50% {transform: rotate(180deg);}
+   75% {transform: rotate(270deg);}
+   100% {transform: rotate(360deg);}
+  }
+  </style>
+<title>Document</title>
+</head>
+<body>  
+<div id="box1"></div>
+<p></p>
+<div id="box2">2차원 변환 효과</div> 
+<p></p>
+<div id="circle"></div>
+</body>
+</html>

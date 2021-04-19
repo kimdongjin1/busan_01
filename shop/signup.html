@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<h lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,12 @@
 </head>
 <body>
  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol  class="breadcrumb">
       <li class="breadcrumb-item"><a href="./main.html">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">회원가입</li>
     </ol>
   </nav>
-  <form">
+  <form>
     <h1>회원가입</h1>
     <div>이름 : <input type="text" name="name" required></div>
     <div>생년월일 : <input type="date"></div>
@@ -35,13 +35,10 @@
   <button type="button" onclick="alert('아이디를 사용할 수 있습니다.')">중복확인
   </button>
 </div>
-<div>비밀번호 : <input type="password" name="pass" required></div>
+<div>비밀번호 : <input type="password" name="pass" required</div>
 <div>비밀번호 확인 : <input type="password" name="pass1" required></div>
 <div>이메일 : <input type="email" name="email" required></div>
 <div>이메일 확인 : <input type="email" name="email1" required> </div>
 </span>
-  <input type="submit" value="회원가입">
-    <input type="reset" value="다시작성">
-  </form>
-</body>
-</html>
+  <input type="submit" value="회원가입" onclick="alert('회원가입 되었습니다.')">
+  
